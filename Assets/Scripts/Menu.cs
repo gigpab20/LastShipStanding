@@ -19,4 +19,8 @@ public class Menu : MonoBehaviour
     public void OnSaveAndExitButton(){
         SceneManager.LoadScene(0);
     }
+
+    public void OnMenuButton(){
+        SceneManager.LoadScene("MainMenu");
+    }
 }

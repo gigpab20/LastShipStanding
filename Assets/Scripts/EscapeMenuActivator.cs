@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-// Add this namespace for TextMeshPro
 using TMPro;
 
 public class Escape : MonoBehaviour
@@ -12,7 +11,6 @@ public class Escape : MonoBehaviour
     public Button continueButton;     
     public Button mainMenu;
     public bool EscapeMenuOpen;
-    // Change Text to TextMeshProUGUI
     public TextMeshProUGUI pauseText;
 
     void Update()
@@ -25,8 +23,8 @@ public class Escape : MonoBehaviour
                 mainMenu.gameObject.SetActive(true);
                 escape.gameObject.SetActive(true);
                 continueButton.gameObject.SetActive(true);
-                pauseText.gameObject.SetActive(true);  // Show the pause text
-                Time.timeScale = 0;  // Pause the game
+                pauseText.gameObject.SetActive(true);  
+                Time.timeScale = 0;  
             }
             else
             {
@@ -34,8 +32,8 @@ public class Escape : MonoBehaviour
                 mainMenu.gameObject.SetActive(false);
                 escape.gameObject.SetActive(false);
                 continueButton.gameObject.SetActive(false);
-                pauseText.gameObject.SetActive(false);  // Hide the pause text
-                Time.timeScale = 1;  // Resume the game
+                pauseText.gameObject.SetActive(false);  
+                Time.timeScale = 1;  
             }
         }
     }

@@ -15,4 +15,8 @@ public class Menu : MonoBehaviour
     public void OnOptionButton(){
         SceneManager.LoadScene("OptionScene");
     }
+
+    public void OnSaveAndExitButton(){
+        SceneManager.LoadScene(0);
+    }
 }
